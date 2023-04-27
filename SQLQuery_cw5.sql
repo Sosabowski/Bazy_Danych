@@ -15,7 +15,7 @@ CREATE TABLE ksiegowosc.wynagrodzenie (id_wynagrodzenia INT, data DATE, id_praco
 
 EXEC sp_addextendedproperty --komentarz tabeli pracownicy
 @name = 'Opis dla tabeli "pracownicy"',
-@value = 'Tabela zawieraj¹ca dane personalne pracowników',
+@value = 'Tabela zawierajÂ¹ca dane personalne pracownikÃ³w',
 @level0type = 'Schema',
 @level0name = 'ksiegowosc',
 @level1type = 'Table',
@@ -23,7 +23,7 @@ EXEC sp_addextendedproperty --komentarz tabeli pracownicy
 
 EXEC sp_addextendedproperty --komentarz tabeli godziny
 @name = 'Opis dla tabeli "godziny"',
-@value = 'Tabela zawieraj¹ca inforamcje o wypracowanych godzinach przez pracowników',
+@value = 'Tabela zawierajÂ¹ca inforamcje o wypracowanych godzinach przez pracownikÃ³w',
 @level0type = 'Schema',
 @level0name = 'ksiegowosc',
 @level1type = 'Table',
@@ -31,7 +31,7 @@ EXEC sp_addextendedproperty --komentarz tabeli godziny
 
 EXEC sp_addextendedproperty --komentarz tabeli pensja
 @name = 'Opis dla tabeli "pensja"',
-@value = 'Tabela zawieraj¹ca inforamcje o pensjach',
+@value = 'Tabela zawierajÂ¹ca inforamcje o pensjach',
 @level0type = 'Schema',
 @level0name = 'ksiegowosc',
 @level1type = 'Table',
@@ -39,7 +39,7 @@ EXEC sp_addextendedproperty --komentarz tabeli pensja
 
 EXEC sp_addextendedproperty --komentarz tabeli premia
 @name = 'Opis dla tabeli "premia"',
-@value = 'Tabela zawieraj¹ca inforamcje o premiach',
+@value = 'Tabela zawierajÂ¹ca inforamcje o premiach',
 @level0type = 'Schema',
 @level0name = 'ksiegowosc',
 @level1type = 'Table',
@@ -47,21 +47,21 @@ EXEC sp_addextendedproperty --komentarz tabeli premia
 
 EXEC sp_addextendedproperty --komentarz tabeli wynagrodzenie
 @name = 'Opis dla tabeli "wynagrodzenie"',
-@value = 'Tabela zawieraj¹ca inforamcje o wynagrodzeniach',
+@value = 'Tabela zawierajÂ¹ca inforamcje o wynagrodzeniach',
 @level0type = 'Schema',
 @level0name = 'ksiegowosc',
 @level1type = 'Table',
 @level1name = 'wynagrodzenie';
 
-INSERT INTO ksiegowosc.pracownicy (id_pracownika,imie, nazwisko, adres, telefon) VALUES (1,'Edward', 'Œmig³y-Rydz', 'Rumunia', '543455678');
-INSERT INTO ksiegowosc.pracownicy (id_pracownika,imie, nazwisko, adres, telefon) VALUES (2,'Stefan', 'D¹b-Biernacki', 'Piotrków Trybunalski', '222313547');
+INSERT INTO ksiegowosc.pracownicy (id_pracownika,imie, nazwisko, adres, telefon) VALUES (1,'Edward', 'Å’migÂ³y-Rydz', 'Rumunia', '543455678');
+INSERT INTO ksiegowosc.pracownicy (id_pracownika,imie, nazwisko, adres, telefon) VALUES (2,'Stefan', 'DÂ¹b-Biernacki', 'PiotrkÃ³w Trybunalski', '222313547');
 INSERT INTO ksiegowosc.pracownicy (id_pracownika,imie, nazwisko, adres, telefon) VALUES (3,'Erwin', 'Rommel', 'Tobruk', '694202137');
 INSERT INTO ksiegowosc.pracownicy (id_pracownika,imie, nazwisko, adres, telefon) VALUES (4,'Tadeusz', 'Piskor', 'Oflag VII A Murnau', '587456966');
-INSERT INTO ksiegowosc.pracownicy (id_pracownika,imie, nazwisko, adres, telefon) VALUES (5,'W³adys³aw', 'Sikorski', 'Gibraltar', '789456123');
-INSERT INTO ksiegowosc.pracownicy (id_pracownika,imie, nazwisko, adres, telefon) VALUES (6,'Józef', 'Unrug', 'Hel', '123456987');
-INSERT INTO ksiegowosc.pracownicy (id_pracownika,imie, nazwisko, adres, telefon) VALUES (7,'Stanis³aw', 'Sosabowski', 'Arnhem', '852369741');
+INSERT INTO ksiegowosc.pracownicy (id_pracownika,imie, nazwisko, adres, telefon) VALUES (5,'WÂ³adysÂ³aw', 'Sikorski', 'Gibraltar', '789456123');
+INSERT INTO ksiegowosc.pracownicy (id_pracownika,imie, nazwisko, adres, telefon) VALUES (6,'JÃ³zef', 'Unrug', 'Hel', '123456987');
+INSERT INTO ksiegowosc.pracownicy (id_pracownika,imie, nazwisko, adres, telefon) VALUES (7,'StanisÂ³aw', 'Sosabowski', 'Arnhem', '852369741');
 INSERT INTO ksiegowosc.pracownicy (id_pracownika,imie, nazwisko, adres, telefon) VALUES (8,'George', 'Patton', 'San Gabriel', '846513297');
-INSERT INTO ksiegowosc.pracownicy (id_pracownika,imie, nazwisko, adres, telefon) VALUES (9,'Gieorgij ', '¯ukow', 'Moskwa', '555874123');
+INSERT INTO ksiegowosc.pracownicy (id_pracownika,imie, nazwisko, adres, telefon) VALUES (9,'Gieorgij ', 'Â¯ukow', 'Moskwa', '555874123');
 INSERT INTO ksiegowosc.pracownicy (id_pracownika,imie, nazwisko, adres, telefon) VALUES (10,'Szymon', 'Koziatek', 'Sztab Generalny', '723665898');
 
 SELECT * FROM ksiegowosc.godziny;
@@ -80,24 +80,24 @@ INSERT INTO ksiegowosc.godziny (id_godziny,data, liczba_godzin, id_pracownika) V
 INSERT INTO ksiegowosc.premia (id_premii,rodzaj, kwota) VALUES (1, 'Socjalistyczna', 100);
 INSERT INTO ksiegowosc.premia (id_premii,rodzaj, kwota) VALUES (2, 'Komunistyczna', 50);
 INSERT INTO ksiegowosc.premia (id_premii,rodzaj, kwota) VALUES (3, 'Kapitalistyczna', 5000);
-INSERT INTO ksiegowosc.premia (id_premii,rodzaj, kwota) VALUES (4, 'Kwarta³owa', 250);
+INSERT INTO ksiegowosc.premia (id_premii,rodzaj, kwota) VALUES (4, 'KwartaÂ³owa', 250);
 INSERT INTO ksiegowosc.premia (id_premii,rodzaj, kwota) VALUES (5, 'Imperialna', 1000);
 INSERT INTO ksiegowosc.premia (id_premii,rodzaj, kwota) VALUES (6, 'Farmazonowa', 30);
 INSERT INTO ksiegowosc.premia (id_premii,rodzaj, kwota) VALUES (7, 'Krakowska', 0);
-INSERT INTO ksiegowosc.premia (id_premii,rodzaj, kwota) VALUES (8, 'Skibiañska', 230);
+INSERT INTO ksiegowosc.premia (id_premii,rodzaj, kwota) VALUES (8, 'SkibiaÃ±ska', 230);
 INSERT INTO ksiegowosc.premia (id_premii,rodzaj, kwota) VALUES (9, 'Morawiecka', 546);
 INSERT INTO ksiegowosc.premia (id_premii,rodzaj, kwota) VALUES (10, 'Strzelcowa', 900);
 
 INSERT INTO ksiegowosc.pensja (id_pensji,stanowisko, kwota ) VALUES (1, 'Referent', 900);
 INSERT INTO ksiegowosc.pensja (id_pensji,stanowisko, kwota ) VALUES (2, 'Rezerwowy', 2500);
-INSERT INTO ksiegowosc.pensja (id_pensji,stanowisko, kwota ) VALUES (3, 'Pu³kownik', 4000);
+INSERT INTO ksiegowosc.pensja (id_pensji,stanowisko, kwota ) VALUES (3, 'PuÂ³kownik', 4000);
 INSERT INTO ksiegowosc.pensja (id_pensji,stanowisko, kwota ) VALUES (4, 'Kapitan', 4500);
 INSERT INTO ksiegowosc.pensja (id_pensji,stanowisko, kwota ) VALUES (5, 'Porucznik', 4700);
 INSERT INTO ksiegowosc.pensja (id_pensji,stanowisko, kwota ) VALUES (6, 'Major', 4750);
-INSERT INTO ksiegowosc.pensja (id_pensji,stanowisko, kwota ) VALUES (7, 'Genera³ Brygady', 5000);
-INSERT INTO ksiegowosc.pensja (id_pensji,stanowisko, kwota ) VALUES (8, 'Genera³ Dywizji', 5500);
-INSERT INTO ksiegowosc.pensja (id_pensji,stanowisko, kwota ) VALUES (9, 'Genera³ Armii', 6500 );
-INSERT INTO ksiegowosc.pensja (id_pensji,stanowisko, kwota ) VALUES (10, 'Marsza³ek', 10000 );
+INSERT INTO ksiegowosc.pensja (id_pensji,stanowisko, kwota ) VALUES (7, 'GeneraÂ³ Brygady', 5000);
+INSERT INTO ksiegowosc.pensja (id_pensji,stanowisko, kwota ) VALUES (8, 'GeneraÂ³ Dywizji', 5500);
+INSERT INTO ksiegowosc.pensja (id_pensji,stanowisko, kwota ) VALUES (9, 'GeneraÂ³ Armii', 6500 );
+INSERT INTO ksiegowosc.pensja (id_pensji,stanowisko, kwota ) VALUES (10, 'MarszaÂ³ek', 10000 );
 
 INSERT INTO ksiegowosc.wynagrodzenie VALUES (1, '2022-05-12', 1, 3, 10, 3)
 INSERT INTO ksiegowosc.wynagrodzenie VALUES (2, '2022-05-13', 3, 2, 9, 6)
@@ -169,10 +169,10 @@ ORDER BY pensja.kwota;
 
 SELECT pensja.stanowisko, COUNT(pensja.stanowisko) FROM ksiegowosc.pensja GROUP BY stanowisko;
 
---l) --dla Genera³a Armii
+--l) --dla GeneraÂ³a Armii
 
 SELECT AVG(pensja.kwota), MIN(pensja.kwota), MAX(pensja.kwota) FROM ksiegowosc.pensja
-WHERE stanowisko = 'Genera³ Armii';
+WHERE stanowisko = 'GeneraÂ³ Armii';
 
 --m)
 SELECT SUM(pensja.kwota) FROM ksiegowosc.pensja;
@@ -197,8 +197,12 @@ GROUP BY pensja.stanowisko
 
 --p)
 
-SELECT * FROM ksiegowosc.pracownicy
-EXEC sp_MSForEachTable 'ALTER TABLE ? NOCHECK CONSTRAINT ALL' GO
+
+EXEC sp_MSForEachTable 'ALTER TABLE ? NOCHECK CONSTRAINT ALL' 
+GO
 DELETE ksiegowosc.pracownicy FROM ksiegowosc.pracownicy 
 JOIN ksiegowosc.wynagrodzenie  ON pracownicy.id_pracownika = wynagrodzenie.id_pracownika
-JOIN ksiegowosc.pensja  ON pensja.id_pensji=wynagrodzenie.id_pensji WHERE pensja.kwota < 1200; GO
+JOIN ksiegowosc.pensja  ON pensja.id_pensji=wynagrodzenie.id_pensji WHERE pensja.kwota < 1200; 
+GO
+
+SELECT * FROM ksiegowosc.pracownicy
